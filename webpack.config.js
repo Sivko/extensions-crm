@@ -1,7 +1,7 @@
-const {resolve} = require('path');
+const { resolve } = require('path');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const {CleanWebpackPlugin} = require("clean-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 const tsRule = {
   test: /\.ts(x?)$/,
@@ -17,7 +17,7 @@ const plugins = [
   }),
   new CopyWebpackPlugin({
     patterns: [
-      {from: "public", to: "."}
+      { from: "public", to: "." }
     ],
   }),
   new CleanWebpackPlugin(),
@@ -29,7 +29,11 @@ module.exports = {
   entry: {
     popup: './src/popup-page/popup.tsx',
     contentscript: './src/contentscript.ts',
+    service_worker: './src/service_worker.ts',
+    raidDublication: './src/raidDublication.tsx'
   },
+  watch: true,
+  // exclude: 
   output: {
     filename: '[name].js',
     path: resolve(__dirname, 'dist'),
