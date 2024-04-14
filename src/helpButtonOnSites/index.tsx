@@ -5,7 +5,7 @@ interface IProps {
   
 }
 
-export const RaidDublication = () => {
+export const HelpButton = () => {
 
   const [isShow, setIsShow] = useState(false)
 
@@ -21,4 +21,4 @@ export const RaidDublication = () => {
   );
 }
 
-export const initRaidDublication = () => render(<RaidDublication />, document.getElementById("raidDublication"));
+export const initHelpButton = () => render(<HelpButton />, document.getElementById("helpButton"));

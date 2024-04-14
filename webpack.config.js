@@ -26,11 +26,13 @@ const plugins = [
 module.exports = {
   mode: "development",
   devtool: 'cheap-module-source-map',
+  resolve: {
+    extensions: ['.ts', '.js', '.tsx'],
+ },
   entry: {
     popup: './src/popup-page/popup.tsx',
     contentscript: './src/contentscript.ts',
     service_worker: './src/service_worker.ts',
-    raidDublication: './src/raidDublication.tsx'
   },
   watch: true,
   // exclude: 

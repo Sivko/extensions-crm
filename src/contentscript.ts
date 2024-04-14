@@ -1,5 +1,4 @@
-//@ts-ignore
-import { initRaidDublication } from "./raidDublication.tsx";
+import { initCombineDublication } from "./combineDuplicates";
 
 chrome.runtime.onMessage.addListener((msg, sender, callback) => {
   // document.write("123")
@@ -12,7 +11,7 @@ const init = async () => {
   const item =  document.createElement("div");
   item.innerHTML = `<div id="raidDublication"></div>`;
   document.querySelector("body")?.append(item);
-  initRaidDublication()
+  initCombineDublication()
 }
 
 chrome.runtime.sendMessage('test', (response) => {
