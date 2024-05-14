@@ -1,4 +1,6 @@
+# VineScript113 ext
 
-## [YouTube Walkthrough](https://youtu.be/h-OP0dtkyI8)
-
-[Chrome Extension Tutorial] Build Chrome Extension with React & Typescript# extensions-crm
+Возможности:
+1. Парсинг сайтов
+2. Набор для быстрой настройки и проверки
+3. Массовые изменения
